@@ -2,10 +2,11 @@ name: Build CampusCoffee
 
 on:
   push:
-    branches: [ "main" ]
+    branches:
+      - 'feature/**'
   pull_request:
-    branches: [ "main" ]
-
+    branches:
+      - 'main'
 jobs:
   build:
     runs-on: ubuntu-latest
